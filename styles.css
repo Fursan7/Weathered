@@ -54,9 +54,15 @@ body {
 }
 
 footer {
-    display: table-row;
-    height: 0;
-    color: rgb(65, 3, 3);
-    font-size: 15px;
-    text-align: center;
+    background-color: #48484A;
+    color: white;
+}
+
+.links {
+    color: whitesmoke;
+}
+
+.links:hover {
+    color: wheat;
+    text-decoration: none;
 }
