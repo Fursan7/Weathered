@@ -10,12 +10,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9e7f4be0d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid background">
+    <div class="container-fluid background d-flex align-items-center">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Weathered</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -39,50 +40,57 @@
                 </ul>
             </div>
         </nav>
-        <div class="box">
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter Location" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <div class="box text-center d-flex m-auto">
+            <input class="bar text-center" type="search" placeholder="Enter Location" aria-label="Search">
+            <button class="btn btn-dark" type="submit"><i class="fas fa-search-location"></i></button>
         </div>
     </div> <br>
-    <div class="card">
-        <div class="card-body">
-            <h2>WEATHER DETAIL</h2> <br>
-            <p class="cardtxt">
-                <strong>Current Weather</strong> = 30°C <br>
-                <strong>Night</strong> = 22°C <br>
-                <strong>Indoor Humidity</strong> = 39% (Slightly Humid) <br>
-                <strong>Cloud Cover</strong> = 31% <br>
-                <strong>Cloud Ceiling</strong> = 9100m <br>
-                <strong>Visibility</strong> = 5km <br>
-                <strong>Pressure</strong> = 1004mb <br>
-            </p>
+    <div class="col-10 col-sm-8 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h2>WEATHER DETAIL</h2> <br>
+                <p class="cardtxt">
+                    <strong>Current Weather</strong> = 30°C <br>
+                    <strong>Night</strong> = 22°C <br>
+                    <strong>Indoor Humidity</strong> = 39% (Slightly Humid) <br>
+                    <strong>Cloud Cover</strong> = 31% <br>
+                    <strong>Cloud Ceiling</strong> = 9100m <br>
+                    <strong>Visibility</strong> = 5km <br>
+                    <strong>Pressure</strong> = 1004mb <br>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-body">
-            <h2>HISTORY</h2> <br>
-            <p class="cardtxt">
-                <strong>Forecast</strong> - High = 37°C - Low = 22°C <br>
-                <strong>Average</strong> - High = 33°C - Low = 20°C <br>
-                <strong>Last Year</strong> = 33°C Low = 22°C <br>
-            </p>
+    <div class="col-10 col-sm-8 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h2>HISTORY</h2> <br>
+                <p class="cardtxt">
+                    <strong>Forecast</strong> - High = 37°C - Low = 22°C <br>
+                    <strong>Average</strong> - High = 33°C - Low = 20°C <br>
+                    <strong>Last Year</strong> = 33°C Low = 22°C <br>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div class="card-body">
-            <h2>COMING DAYS</h2> <br>
-            <p class="cardtxt">
-                <strong>11/10</strong> - High = 37°C - Low = 22°C <br>
-                <strong>12/10</strong> - High = 35°C - Low = 21°C <br>
-                <strong>13/10</strong> - High = 35°C - Low = 21°C <br>
-                <strong>14/10</strong> - High = 35°C - Low = 19°C <br>
-                <strong>15/10</strong> - High = 34°C - Low = 19°C <br>
-                <strong>16/10</strong> - High = 34°C - Low = 20°C <br>
-                <strong>17/10</strong> - High = 34°C - Low = 20°C <br>
-                <strong>18/10</strong> - High = 34°C - Low = 20°C <br>
-            </p>
+    <div class="col-10 col-sm-8 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h2>UPCOMING DAYS</h2> <br>
+                <p class="cardtxt">
+                    <strong>11/10</strong> - High = 37°C - Low = 22°C <br>
+                    <strong>12/10</strong> - High = 35°C - Low = 21°C <br>
+                    <strong>13/10</strong> - High = 35°C - Low = 21°C <br>
+                    <strong>14/10</strong> - High = 35°C - Low = 19°C <br>
+                    <strong>15/10</strong> - High = 34°C - Low = 19°C <br>
+                    <strong>16/10</strong> - High = 34°C - Low = 20°C <br>
+                    <strong>17/10</strong> - High = 34°C - Low = 20°C <br>
+                    <strong>18/10</strong> - High = 34°C - Low = 20°C <br>
+                </p>
+            </div>
         </div>
     </div>
+    <br>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -108,8 +116,9 @@
             <div class="col-md-4 mx-auto">
 
                 <!-- Content -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-                <p>This website was created by Fursan Afzal. Weathered brings you your weather info with clever
+                <h5 class="font-weight-bold text-center text-uppercase mt-3 mb-4">About</h5>
+                <p class="text-center">This website was created by Fursan Afzal. Weathered brings you your weather info
+                    with clever
                     statistics to always keep you informed and ready for varying weather conditions.</p>
 
             </div>
@@ -121,9 +130,9 @@
             <div class="col-md-2 mx-auto">
 
                 <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled text-center">
                     <li>
                         <a href="#!" class="links">Maps</a>
                     </li>
@@ -143,9 +152,9 @@
             <div class="col-md-2 mx-auto">
 
                 <!-- Links -->
-                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled text-center">
                     <li>
                         <a href="#!" class="links">Videos</a>
                     </li>
@@ -168,15 +177,6 @@
     <hr>
 
     <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-            <h5 class="mb-1">Register for free</h5>
-        </li>
-        <li class="list-inline-item">
-            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-        </li>
-    </ul>
-    <!-- Call to action -->
 
     <hr>
 
@@ -193,18 +193,8 @@
             </a>
         </li>
         <li class="list-inline-item">
-            <a class="btn-floating btn-gplus mx-1">
-                <i class="fab fa-google-plus-g"> </i>
-            </a>
-        </li>
-        <li class="list-inline-item">
             <a class="btn-floating btn-li mx-1">
                 <i class="fab fa-linkedin-in"> </i>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-dribbble mx-1">
-                <i class="fab fa-dribbble"> </i>
             </a>
         </li>
     </ul>
@@ -212,7 +202,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a> Weathered by Fursan Afzal SP18-BSE-083-B </a>
+        <a> Weathered by Fursan Afzal</a>
     </div>
     <!-- Copyright -->
 
